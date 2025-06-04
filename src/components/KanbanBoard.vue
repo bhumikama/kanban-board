@@ -60,12 +60,12 @@ const columns = ref<Column[]>([
 ]);
 
 const dialog = ref(false);
-const activeCard = ref<Card | null>(null);
+const activeCard = ref<Card | undefined>(undefined)
 const currentColumnId = ref<string | null>(null);
 
 function onAddCard(columnId: string) {
   currentColumnId.value = columnId;
-  activeCard.value = null;
+  activeCard.value = undefined;
   dialog.value = true;
 }
 
