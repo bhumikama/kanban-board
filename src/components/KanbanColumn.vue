@@ -21,10 +21,12 @@
             <v-btn
               icon
               size="small"
+              color="white"
+              class="elevation-1"
               @click="$emit('add', column.id)"
               v-bind="props"
             >
-              <v-icon>mdi-plus</v-icon>
+              <v-icon color="black">mdi-plus</v-icon>
             </v-btn>
           </template>
         </v-tooltip>
